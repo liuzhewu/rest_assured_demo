@@ -1,0 +1,45 @@
+{
+  "required": [
+    "lotto"
+  ],
+  "properties": {
+    "lotto": {
+      "type": "object",
+      "properties": {
+        "lottoId": {
+          "type": "number"
+        },
+        "winning-numbers": {
+          "type": "array",
+          "items":{
+            "type": "number"
+          }
+        },
+        "winners": {
+          "type": "array",
+          "items":{
+            "type": "object",
+            "properties":{
+              "winnerId": {
+                "type": "number"
+              },
+              "numbers": {
+                "type": "array",
+                "items":{
+                  "type": "integer"
+                }
+              }
+
+            }
+          }
+
+        }
+      }
+    },
+    "per_page": {
+      "type": "number",
+      "minimum": 3
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,14 @@
+<!--此文件配置执行逻辑，环境默认为ali，在common.properties的DEFAULT_ENV-->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="interfaceTest">
+    <test name="CORE">
+        <classes>
+            <class name="com.liu.test.BeforeTest"></class>
+            <class name="com.liu.test.GetTest"></class>
+            <class name="com.liu.test.PostTest"></class>
+            <class name="com.liu.test.AfterTest"></class>
+
+        </classes>
+    </test>
+
+</suite>
